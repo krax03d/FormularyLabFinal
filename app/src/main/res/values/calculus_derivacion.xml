@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="derivacion_tittle">Derivación</string>
+    <string name="derivacion_content">En matemáticas, la derivada de una función,
+        es la razón de cambio instantánea con la que cambia el valor de dicha función matemática,
+        según cambie el valor de su variable independiente</string>
+    <string name="derivacion_save">Guardar</string>
+    <string name="derivacion_more">Mas Información</string>
+
+</resources>

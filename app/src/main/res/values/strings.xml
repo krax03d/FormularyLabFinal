@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FormuLab</string>
+    <string name="tv_Principal">Bienvenidos a su aplicación de formulas</string>
+    <string name="tv2_Principal">Por favor elija una opción</string>
+    <string name="tv_Category">FormuLab</string>
+    <string name="bt_scanner_qr">Scanner QR</string>
+    <string name="bt_scanner_qr_main">QR</string>
+    <string name="save_button">Guardado Exitosamente</string>
+    <string name="save_formulas">Formulas Guardadas</string>
+    <string name="bt_save_formulas">Fav</string>
+    <string name="bt_save_formulas_delete">Borrar Formulas</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

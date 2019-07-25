@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="trigo_tangente_tittle">Tangente</string>
+    <string name="trigo_tangente_content">la tangente de un ángulo (de un triángulo rectángulo) se define como la razón entre
+        el cateto opuesto y el adyacente: </string>
+    <string name="trigo_tangente_save">Guardar</string>
+    <string name="trigo_tangente__more">Mas Información</string>
+</resources>

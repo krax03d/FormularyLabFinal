@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo_main"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment_move_rectiline">
+
+    <TextView
+        android:id="@+id/tv_move_rectiline_uniform_little"
+        android:layout_width="722dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/move_rectiline_uniform_tittle"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_move_rectiline_uniform_content"
+        android:layout_width="218dp"
+        android:layout_height="253dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bordes"
+        android:gravity="center|center_horizontal"
+        android:text="@string/move_rectiline_uniform_content"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_move_rectiline_uniform_little" />
+
+    <ImageView
+        android:id="@+id/iv_move_rectiline_uniform_tittle"
+        android:layout_width="421dp"
+        android:layout_height="156dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/move_rectiline_uniform"
+        android:contentDescription="@string/move_rectiline_uniform_tittle"
+        app:layout_constraintStart_toEndOf="@+id/tv_move_rectiline_uniform_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_move_rectiline_uniform_little" />
+
+    <Button
+        android:id="@+id/bt_move_rectiline_uniform_save"
+        android:layout_width="209dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_save_effect"
+        android:text="@string/move_rectiline_uniform_save"
+        app:layout_constraintStart_toEndOf="@+id/tv_move_rectiline_uniform_content"
+        app:layout_constraintTop_toBottomOf="@+id/iv_move_rectiline_uniform_tittle" />
+
+    <Button
+        android:id="@+id/bt_move_rectiline_uniform_more"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_more_effect"
+        android:text="@string/move_rectiline_uniform_more"
+        app:layout_constraintStart_toEndOf="@+id/tv_move_rectiline_uniform_content"
+        app:layout_constraintTop_toBottomOf="@+id/iv_move_rectiline_uniform_tittle" />
+</android.support.constraint.ConstraintLayout>

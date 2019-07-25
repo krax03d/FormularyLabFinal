@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="move_parabolic_tittle">Movimiento Parabolico</string>
+    <string name="move_parabolic_content">Se denomina movimiento parabólico al movimiento realizado por cualquier
+        objeto cuya trayectoria describe una parábola. Se corresponde con la trayectoria ideal de un proyectil que se
+        mueve en un medio que no ofrece resistencia al avance y que está sujeto a un campo gravitatorio uniforme.
+    </string>
+    <string name="move_parabolic_save">Guardar</string>
+    <string name="move_parabolic_more">Mas Información</string>
+</resources>

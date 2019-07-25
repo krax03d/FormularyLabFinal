@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="trigo_seno_tittle">Seno</string>
+    <string name="trigo_seno_content">El seno de un ángulo de un triángulo rectángulo se define como la razón entre el cateto opuesto
+        a dicho ángulo y la hipotenusa:  </string>
+    <string name="trigo_seno_save">Guardar</string>
+    <string name="trigo_seno__more">Mas Información</string>
+</resources>

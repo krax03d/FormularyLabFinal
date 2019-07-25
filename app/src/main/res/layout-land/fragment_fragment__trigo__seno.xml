@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trigo_seno_main"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo_main"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment_Trigo_Seno">
+
+    <TextView
+        android:id="@+id/tv_trigo_seno_tittle"
+        android:layout_width="730dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/trigo_seno_tittle"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_trigo_seno_content"
+        android:layout_width="201dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bordes"
+        android:gravity="center|center_horizontal"
+        android:text="@string/trigo_seno_content"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_trigo_seno_tittle" />
+
+    <ImageView
+        android:id="@+id/iv_trigo_seno_image"
+        android:layout_width="398dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/trigo_seno"
+        android:contentDescription="@string/trigo_seno_tittle"
+        app:layout_constraintStart_toEndOf="@+id/tv_trigo_seno_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_trigo_seno_tittle" />
+
+    <Button
+        android:id="@+id/bt_trigo_seno_save"
+        android:layout_width="221dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_save_effect"
+        android:text="@string/trigo_seno_save"
+        app:layout_constraintStart_toEndOf="@+id/tv_trigo_seno_content"
+        app:layout_constraintTop_toBottomOf="@+id/iv_trigo_seno_image" />
+
+    <Button
+        android:id="@+id/bt_trigo_seno_more"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_more_effect"
+        android:text="@string/trigo_seno__more"
+        app:layout_constraintStart_toEndOf="@+id/bt_trigo_seno_save"
+        app:layout_constraintTop_toBottomOf="@+id/iv_trigo_seno_image" />
+</android.support.constraint.ConstraintLayout>

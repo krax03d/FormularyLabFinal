@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="integrar_tittle">Integrarles</string>
+    <string name="integrar_content">El cálculo integral, encuadrado en el cálculo infinitesimal,
+        es una rama de las matemáticas en el proceso de integración o antiderivación.
+        Es muy común en la ingeniería y en la ciencia; se utiliza principalmente para
+        el cálculo de áreas y volúmenes de regiones y sólidos de revolución. </string>
+    <string name="integrar_save">Guardar</string>
+    <string name="integrar_more">Mas Información</string>
+</resources>

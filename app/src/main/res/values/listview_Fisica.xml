@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Fisica_options">
+        <item>Vectores</item>
+        <item>Movimiento Rectilineo Uniforme</item>
+        <item>Movimiento Parabolico</item>
+
+    </string-array>
+
+
+</resources>

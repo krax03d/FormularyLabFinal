@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="move_rectiline_uniform_tittle">Movimiento Rectilineo Uniforme</string>
+    <string name="move_rectiline_uniform_content">Un movimiento es rectilíneo cuando un objeto describe una trayectoria
+        recta respecto a un observador, y es uniforme cuando su velocidad es constante en el tiempo,
+        dado que su aceleración es nula. </string>
+    <string name="move_rectiline_uniform_save">Guardar</string>
+    <string name="move_rectiline_uniform_more">Mas Información</string>
+</resources>

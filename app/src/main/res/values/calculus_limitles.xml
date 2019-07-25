@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="limitles_tittle">Limites</string>
+    <string name="limitles_content">En análisis real para funciones de una variable,
+        se puede hacer una definición de límite similar a la de límite de una sucesión,
+        en la cual, los valores que toma la función dentro de un intervalo o radio de
+        convergencia se van aproximando a un punto fijado punto de acumulación, independientemente
+        de que éste pertenezca al dominio de la función.​  </string>
+    <string name="limitles_save">Guardar</string>
+    <string name="limitles_more">Mas Información</string>
+</resources>

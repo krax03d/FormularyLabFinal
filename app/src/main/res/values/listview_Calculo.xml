@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Calcu_options">
+        <item>Derivaciones</item>
+        <item>Integrales</item>
+        <item>Limites</item>
+
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_main"
+    android:orientation="vertical"
+    tools:context=".Fragment_Move_Parabolic">
+
+    <TextView
+        android:id="@+id/tv_move_parabolic_tittle"
+        android:layout_width="715dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/move_parabolic_tittle"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_move_parabolic_content"
+        android:layout_width="373dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bordes"
+        android:gravity="center|center_horizontal"
+        android:text="@string/move_parabolic_content"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_move_parabolic_tittle" />
+
+    <ImageView
+        android:id="@+id/iv_move_parabolic_image"
+        android:layout_width="219dp"
+        android:layout_height="133dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/move_parabolic"
+        android:contentDescription="@string/move_parabolic_tittle"
+        app:layout_constraintStart_toEndOf="@+id/tv_move_parabolic_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_move_parabolic_tittle" />
+
+    <Button
+        android:id="@+id/bt_move_parabolic_save"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_save_effect"
+        android:text="@string/move_parabolic_save"
+        app:layout_constraintStart_toEndOf="@+id/tv_move_parabolic_content"
+        app:layout_constraintTop_toBottomOf="@+id/iv_move_parabolic_image" />
+
+    <Button
+        android:id="@+id/bt_move_parabolic_more"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_more_effect"
+        android:text="@string/move_parabolic_more"
+        app:layout_constraintStart_toEndOf="@+id/tv_move_parabolic_content"
+        app:layout_constraintTop_toBottomOf="@+id/bt_move_parabolic_save" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="vectors_tittle">Vectores</string>
+    <string name="vectors_content">En física, un vector​ es un ente matemático como la recta o el plano.
+        Un vector se representa mediante un segmento de recta, orientado dentro del espacio euclidiano tridimensional.
+        El vector tiene 3 elementos: módulo, dirección y sentido.​ Los vectores nos permiten representar magnitudes físicas vectoriales,</string>
+    <string name="vectors_save">Guardar</string>
+    <string name="vectors_more">Mas Información</string>
+</resources>
