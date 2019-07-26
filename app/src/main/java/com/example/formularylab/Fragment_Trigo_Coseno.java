@@ -11,8 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.example.formularylab.Utilidades.Utilidades;
 
 
@@ -32,6 +34,7 @@ public class Fragment_Trigo_Coseno extends Fragment {
     Button navigator;
     View vista;
     Button save;
+    ImageView imagen;
 
 
     // TODO: Rename and change types of parameters
@@ -79,6 +82,8 @@ public class Fragment_Trigo_Coseno extends Fragment {
         vista=inflater.inflate(R.layout.fragment_fragment__trigo__coseno, container, false);
         navigator=(Button) vista.findViewById(R.id.bt_trigo_coseno_more);
         save= (Button) vista.findViewById(R.id.bt_trigo_coseno_save);
+        imagen=(ImageView) vista.findViewById(R.id.iv_trigo_coseno_image);
+        LoadImagen();
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -153,5 +158,11 @@ public class Fragment_Trigo_Coseno extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+    private void LoadImagen(){
+        Glide.with(this)
+                .load("http://192.168.100.116:80/trigo_coseno.JPG")
+                .into(imagen);
+
     }
 }

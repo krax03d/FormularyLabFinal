@@ -6,13 +6,16 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.example.formularylab.Utilidades.Utilidades;
 
 
@@ -32,6 +35,7 @@ public class Fragment_Integrar extends Fragment {
     Button navigator;
     View vista;
     Button save;
+    ImageView imagen;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -78,6 +82,8 @@ public class Fragment_Integrar extends Fragment {
         vista=inflater.inflate(R.layout.fragment_fragment__integrar, container, false);
         navigator=(Button) vista.findViewById(R.id.bt_integrals_more);
         save=(Button) vista.findViewById(R.id.bt_integrals_save);
+        imagen=(ImageView) vista.findViewById(R.id.iv_integrals_image);
+        LoadImagen();
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -153,5 +159,11 @@ public class Fragment_Integrar extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+    private void LoadImagen(){
+        Glide.with(this)
+                .load("http://192.168.100.116:80/integrales2.PNG")
+                .into(imagen);
+
     }
 }

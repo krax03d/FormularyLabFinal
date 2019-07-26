@@ -4,6 +4,9 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,9 +15,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.ImageRequest;
+import com.android.volley.toolbox.Volley;
+import com.bumptech.glide.Glide;
 import com.example.formularylab.Utilidades.Utilidades;
+
+import java.net.URL;
+import java.net.URLConnection;
+
+import static java.lang.System.load;
 
 
 public class Fragment_Derivar extends Fragment {
@@ -26,6 +41,8 @@ public class Fragment_Derivar extends Fragment {
     Button navigator;
     Button save;
     View vista;
+    ImageView imagen;
+    RequestQueue request;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -46,6 +63,7 @@ public class Fragment_Derivar extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
+
 
 
     @Override
@@ -69,11 +87,19 @@ public class Fragment_Derivar extends Fragment {
         vista=inflater.inflate(R.layout.fragment_fragment__derivar, container, false);
         navigator=(Button) vista.findViewById(R.id.bt_derivation_more);
         save=(Button) vista.findViewById(R.id.bt_derivation_save);
-
+        imagen=(ImageView)vista.findViewById(R.id.iv_derivation_image);
+        //request = Volley.newRequestQueue(getContext());
+        if(compruebaConexion(getContext())==true){
+            LoadImagen();
+        }else{
+            imagen=null;
+            Toast.makeText(getContext(),"Sin Conexión",Toast.LENGTH_LONG).show();
+        }
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SaveFormula();
+                //SaveFormula();
+                LoadImagen();
             }
         });
 
@@ -149,5 +175,45 @@ public class Fragment_Derivar extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+    private void LoadWebService(){
+    String url="http://192.168.100.115/derivar.PNG";
+        ImageRequest imageRequest = new ImageRequest(url,
+                new Response.Listener<Bitmap>() {
+                    @Override
+                    public void onResponse(Bitmap response) {
+                        imagen.setImageBitmap(response);
+                    }
+                },0,0,ImageView.ScaleType.CENTER,null, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+            Toast.makeText(getContext(),"Error al cargar la imagen",Toast.LENGTH_LONG).show();
+            }
+        });
+        request.add(imageRequest);
+    }
+    private void LoadImagen(){
+        Glide.with(this)
+        .load("http://192.168.100.116:80/derivar.PNG")
+        .into(imagen);
+
+    }
+
+    public static boolean compruebaConexion(Context context) {
+
+        boolean connected = false;
+
+        ConnectivityManager connec = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        // Recupera todas las redes (tanto móviles como wifi)
+        NetworkInfo[] redes = connec.getAllNetworkInfo();
+
+        for (int i = 0; i < redes.length; i++) {
+            // Si alguna red tiene conexión, se devuelve true
+            if (redes[i].getState() == NetworkInfo.State.CONNECTED) {
+                connected = true;
+            }
+        }
+        return connected;
     }
 }

@@ -16,7 +16,7 @@ public class Categories_One extends AppCompatActivity implements Fragment_Deriva
         Fragment_Trigo_Seno.OnFragmentInteractionListener,
         Fragment_Trigo_Coseno.OnFragmentInteractionListener,
         Fragment_Trigo_Tangente.OnFragmentInteractionListener{
-//siiiiiiiiiiiiiiiiiii
+
     TextView tv1;
     TextView tv2;
     Fragment_Derivar fragment_derivar;
